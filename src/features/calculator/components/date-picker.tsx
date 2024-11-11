@@ -1,5 +1,6 @@
 import React from "react";
 import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label/label";
 
 interface DatePickerProps {
   label: string;
@@ -12,9 +13,9 @@ const DatePicker: React.FC<DatePickerProps> = ({ label, value, onChange }) => {
   const inputId = `${loweCaseName}-input`;
   return (
     <div className="mb-4">
-      <label htmlFor={inputId} className="block font-medium mb-1">
+      <Label htmlFor={inputId} className="block font-medium mb-1">
         {label}
-      </label>
+      </Label>
       <Input
         id={inputId}
         type="date"
