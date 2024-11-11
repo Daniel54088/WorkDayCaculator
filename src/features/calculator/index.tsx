@@ -8,7 +8,7 @@ import {
   calculateResult,
   resetCalculator,
   setError,
-} from "@/features/calculator-slice";
+} from "@/features/calculator/calculator-slice";
 import { Tab } from "@/types/holidays";
 export default function Calculator() {
   const dispatch = useAppDispatch();

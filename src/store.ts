@@ -1,10 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { questionSlice } from "@/features/question-slice";
-import calculatorSlice from "@/features/calculator-slice";
+import calculatorSlice from "@/features/calculator/calculator-slice";
 
 export const store = configureStore({
   reducer: {
-    question: questionSlice.reducer,
     calculator: calculatorSlice,
   },
 });

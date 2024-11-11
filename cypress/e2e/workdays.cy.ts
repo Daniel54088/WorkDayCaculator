@@ -1,4 +1,4 @@
-// cypress/e2e/workdays.cy.ts
+/// <reference types="cypress" />
 
 describe("Work Days Calculator Flow", () => {
   beforeEach(() => {

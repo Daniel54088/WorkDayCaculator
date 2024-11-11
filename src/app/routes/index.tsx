@@ -9,6 +9,7 @@ export const createRouter = () =>
         return { Component: CalculatorRoute };
       },
     },
+    // TODO: Add routes for the other pages
     {
       path: "*",
       lazy: async () => {

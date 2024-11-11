@@ -2,8 +2,6 @@ import "@testing-library/jest-dom/vitest";
 
 import { server } from "@/testing/mocks/server";
 
-vi.mock("zustand");
-
 beforeAll(() => server.listen({ onUnhandledRequest: "error" }));
 afterAll(() => server.close());
 beforeEach(() => {

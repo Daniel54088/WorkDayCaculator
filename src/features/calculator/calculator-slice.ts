@@ -53,6 +53,7 @@ const calculatorSlice = createSlice({
         state.result = BusinessDayCounter.weekdaysBetweenTwoDates(start, end);
       } else {
         const publicHolidayRules: HolidayRule[] = [
+          // Adding more holidays to test, based on HolidayRule
           { type: "fixed", month: 11, day: 25 }, // Example: Christmas on 25th December
           { type: "fixed", month: 11, day: 26 }, // Example: Boxing Day on 26th December
           {

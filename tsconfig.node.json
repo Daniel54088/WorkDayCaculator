@@ -11,7 +11,7 @@
     "isolatedModules": true,
     "moduleDetection": "force",
     "noEmit": true,
-    "types": ["vite/client", "vitest/globals", "cypress/globals"],
+    "types": ["vite/client", "vitest/globals"],
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
@@ -23,5 +23,6 @@
     }
   },
 
-  "include": ["vite.config.ts"]
+  "include": ["vite.config.ts"],
+  "exclude": ["cypress"]
 }

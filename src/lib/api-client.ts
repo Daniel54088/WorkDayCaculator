@@ -1,6 +1,8 @@
 import Axios, { InternalAxiosRequestConfig } from "axios";
 import { env } from "@/config/env";
 
+// TODO: Use in the future if we need to call the API
+
 function authRequestInterceptor(config: InternalAxiosRequestConfig) {
   if (config.headers) {
     config.headers.Accept = "application/json";

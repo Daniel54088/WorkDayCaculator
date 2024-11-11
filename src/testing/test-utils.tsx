@@ -1,7 +1,9 @@
+import { ReactElement } from "react";
 import {
   render as rtlRender,
   screen,
   waitForElementToBeRemoved,
+  RenderOptions,
 } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { RouterProvider, createMemoryRouter } from "react-router-dom";
@@ -18,8 +20,17 @@ export const waitForLoadingToFinish = () =>
   );
 
 export const renderApp = async (
-  ui: any,
-  { url = "/", path = "/", ...renderOptions }: Record<string, any> = {}
+  ui: ReactElement,
+  {
+    url = "/",
+    path = "/",
+    ...renderOptions
+  }: Partial<
+    RenderOptions & {
+      url?: string;
+      path?: string;
+    }
+  > = {}
 ) => {
   // if you want to render the app unauthenticated then pass "null" as the user
 
